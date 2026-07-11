@@ -14,10 +14,20 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout your repository using git
+      - name: Checkout your repository
         uses: actions/checkout@v4
-      - name: Install, build, and upload your site
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm' # Beschleunigt künftige Builds deutlich
+
+      - name: Install dependencies and build
         uses: withastro/action@v3
+        with:
+          # Stellt sicher, dass das Build-Skript korrekt ausgeführt wird
+          package-manager: npm
 
   deploy:
     needs: build
