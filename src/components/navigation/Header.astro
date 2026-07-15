@@ -2,6 +2,7 @@
 import Logo from "../ui/Logo.astro";
 import Button from "../ui/Button.astro";
 import Accessibility from "../ui/Accessibility.astro";
+import DividerDashed from "../ui/DividerDashed.astro";
 ---
 
 <header class="header">
@@ -28,12 +29,9 @@ import Accessibility from "../ui/Accessibility.astro";
 
     </nav>
 
-    <img
-        src="/vector/divider.svg"
-        alt=""
-        aria-hidden="true"
-        class="divider"
-    />
+   <div class="divider">
+    <DividerDashed />
+</div>
 
 </header>
 
@@ -64,8 +62,6 @@ import Accessibility from "../ui/Accessibility.astro";
 }
 
 .divider {
-    display: block;
-    width: 100%;
-    height: auto;
+    margin-bottom: 1rem;
 }
 </style>
