@@ -1,0 +1,163 @@
+---
+import Button from "../navigation/Button.astro";
+import ImageBox from "../ui/ImageBox.astro";
+import FadeIn from "../animations/FadeIn.svelte";
+---
+
+<section id="projekte">
+
+    <!-- Projekt 1 -->
+    <div class="row">
+
+        <div class="col-image border-left-solid border-right-dashed">
+            <FadeIn client:visible delay={0}>
+                <ImageBox
+                    src="/images/projects/Placeholder.png"
+                    alt="Projekt 1 Vorschau"
+                />
+            </FadeIn>
+        </div>
+
+        <div class="col-text border-right-solid">
+
+            <FadeIn client:visible delay={100}>
+                <h1 class="title">PROJEKT 1</h1>
+            </FadeIn>
+
+            <FadeIn client:visible delay={200}>
+                <h2>BESCHREIBUNG</h2>
+            </FadeIn>
+
+            <FadeIn client:visible delay={300}>
+                <p>
+                    bla bla bla bla...<br />
+                    ganz viel Text<br />
+                    und so
+                </p>
+            </FadeIn>
+
+            <div class="buttons">
+                <FadeIn client:visible delay={400}>
+                    <Button
+                        href="/projekte/projekt-1"
+                        variant="red"
+                    >
+                        PROJEKT GENAUER ANSEHEN
+                    </Button>
+                </FadeIn>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Projekt 2 -->
+    <div class="row">
+
+        <div class="col-text border-left-solid border-right-dashed">
+
+            <FadeIn client:visible delay={0}>
+                <h1 class="title">PROJEKT 2</h1>
+            </FadeIn>
+
+            <FadeIn client:visible delay={100}>
+                <h2>BESCHREIBUNG</h2>
+            </FadeIn>
+
+            <FadeIn client:visible delay={200}>
+                <p>
+                    Hier steht der Text für das zweite Projekt.<br />
+                    Alles sauber gespiegelt durch HTML-Anordnung.<br />
+                    Borders fluchten perfekt mit Projekt 1.
+                </p>
+            </FadeIn>
+
+            <div class="buttons">
+                <FadeIn client:visible delay={300}>
+                    <Button
+                        href="/projekte/projekt-2"
+                        variant="red"
+                    >
+                        PROJEKT GENAUER ANSEHEN
+                    </Button>
+                </FadeIn>
+            </div>
+
+        </div>
+
+        <div class="col-image border-right-solid">
+            <FadeIn client:visible delay={400}>
+                <ImageBox
+                    src="/images/projects/Placeholder.png"
+                    alt="Projekt 2 Vorschau"
+                />
+            </FadeIn>
+        </div>
+
+    </div>
+
+</section>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Zeilenlayout */
+    .row {
+        display: flex;
+        align-items: stretch;
+
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    /* Spaltenlayout */
+    .col-image,
+    .col-text {
+        padding: 1.5rem;
+        border-bottom: 3px solid var(--border-color);
+    }
+
+    .col-image {
+        flex: 0.5;
+    }
+
+    .col-text {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    /* Rasterlinien */
+    .border-left-solid {
+        border-left: 3px solid var(--border-color);
+    }
+
+    .border-right-solid {
+        border-right: 3px solid var(--border-color);
+    }
+
+    .border-right-dashed {
+        border-right: 2px dashed var(--border-color);
+    }
+
+    /* Projekttitel */
+    .title {
+        margin: 0;
+
+        font-size: 400%;
+        font-weight: 700;
+    }
+
+    /* Buttonbereich */
+    .buttons {
+        display: flex;
+        justify-content: center;
+
+        width: 100%;
+        margin-top: auto;
+        padding-top: 2rem;
+    }
+</style>

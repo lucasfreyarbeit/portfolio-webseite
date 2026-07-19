@@ -2,58 +2,123 @@
 import Button from "../navigation/Button.astro";
 import ImageBox from "../ui/ImageBox.astro";
 import Logo from "../ui/Logo.astro";
+import FadeIn from "../animations/FadeIn.svelte";
 ---
 
 <section id="hero">
+
     <div class="row">
-        <!-- Linke Spalte: Fokus auf Portrait -->
+
+        <!-- Portrait -->
         <div class="column-left border-left-solid border-right-dashed">
-            <div class="portrait-wrapper">
-                <ImageBox src="/images/portraits/Downscaled.jpg" alt="Portrait von Lucas" />
-            </div>
-        </div>
-
-        <!-- Rechte Spalte: Branding, Biografie und Skills -->
-        <div class="column-right border-right-solid">
-            <div class="logo-wrapper">
-                <Logo variant="black" />
-            </div>
-            
-            <h2 class="subheading">
-                <span class="text-designer">DESIGNER.</span> 
-                <span class="text-developer">DEVELOPER.</span>
-            </h2>
-            
-            <div class="bio-content">
-                <h3>ÜBER MICH</h3>
-               <p>
-                    Ich verbinde Development, Design und Business. Als technischer Generalist löse ich Probleme 
-                    auf jeder Ebene eines Projekts: Ich entwickle das Produkt, gestalte das gesamte Branding samt Design 
-                    und kümmere mich um das Publishing sowie das strategische Skalieren.
-</p>
-            </div>
-
-            <!-- Toolstack-Sektion zur optimalen Raumausnutzung -->
-            <div class="tech-stack">
-                <h3>TOOLSTACK</h3>
-                <div class="stack-grid">
-                    <span class="tech-tag">Astro</span>
-                    <span class="tech-tag">HTML / CSS</span>
-                    <span class="tech-tag">VS Code</span>
-                    <span class="tech-tag">Git / GitHub</span>
-                    <span class="tech-tag">Godot Engine</span>
-                    <span class="tech-tag">Unity</span>
+            <FadeIn client:load delay={0}>
+                <div class="portrait-wrapper">
+                    <ImageBox
+                        src="/images/portraits/Downscaled.jpg"
+                        alt="Portrait von Lucas"
+                    />
                 </div>
-            </div>
-            
-            <!-- Primäre CTAs als Abschluss des Leseflusses -->
-            <div class="action-area">
-                <Button href="#projekte" variant="red">PROJEKTE</Button>
-                <Button href="#kontakt" variant="blue">KONTAKT</Button>
-                <Button href="/documents/Lebenslauf-Lucas-Frey.pdf" download variant="red">LEBENSLAUF.PDF</Button>
-            </div>
+            </FadeIn>
         </div>
+
+        <!-- Inhalt -->
+        <div class="column-right border-right-solid">
+
+            <!-- Branding -->
+            <FadeIn client:load delay={100}>
+                <div class="logo-wrapper">
+                    <Logo variant="black" />
+                </div>
+            </FadeIn>
+
+            <FadeIn client:load delay={200}>
+                <h2 class="subheading">
+                    <span class="text-designer">
+                        DESIGNER.
+                    </span>
+
+                    <span class="text-developer">
+                        DEVELOPER.
+                    </span>
+                </h2>
+            </FadeIn>
+
+            <!-- Über mich -->
+            <FadeIn client:load delay={300}>
+                <section class="content-section">
+
+                    <h3 class="section-title">
+                        ÜBER MICH
+                    </h3>
+
+                    <p>
+                        Ich verbinde Development, Design und Business.
+                        Als technischer Generalist löse ich Probleme
+                        auf jeder Ebene eines Projekts: Ich entwickle
+                        das Produkt, gestalte das gesamte Branding samt
+                        Design und kümmere mich um das Publishing sowie
+                        das strategische Skalieren.
+                    </p>
+
+                </section>
+            </FadeIn>
+
+            <!-- Toolstack -->
+            <FadeIn client:load delay={400}>
+                <section class="content-section">
+
+                    <h3 class="section-title">
+                        TOOLSTACK
+                    </h3>
+
+                    <div class="stack-grid">
+                        <span class="tech-tag">Astro</span>
+                        <span class="tech-tag">HTML / CSS</span>
+                        <span class="tech-tag">VS Code</span>
+                        <span class="tech-tag">Git / GitHub</span>
+                        <span class="tech-tag">Godot Engine</span>
+                    </div>
+
+                </section>
+            </FadeIn>
+
+            <!-- Navigation -->
+            <nav class="action-area">
+
+                <FadeIn client:load delay={500}>
+                    <Button
+                        href="#projekte"
+                        variant="red"
+                    >
+                        PROJEKTE
+                    </Button>
+                </FadeIn>
+
+                <FadeIn client:load delay={600}>
+                    <Button
+                        href="#kontakt"
+                        variant="blue"
+                    >
+                        KONTAKT
+                    </Button>
+                </FadeIn>
+
+                <FadeIn client:load delay={700}>
+                    <Button
+                        href="/documents/Lebenslauf-Lucas-Frey.pdf"
+                        download
+                        variant="red"
+                    >
+                        LEBENSLAUF.PDF
+                    </Button>
+                </FadeIn>
+
+            </nav>
+
+        </div>
+
     </div>
+
 </section>
 
 <style>
@@ -61,46 +126,45 @@ import Logo from "../ui/Logo.astro";
         box-sizing: border-box;
     }
 
+    /* Hero-Bereich */
     #hero {
         width: 100%;
         padding-top: 1rem;
     }
 
+    /* Zeilenlayout */
     .row {
         display: flex;
-        flex-direction: row;
-        width: 100%; 
-        margin: 0 auto; 
-        padding: 0rem 1rem;
+        align-items: stretch;
+
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 1rem;
     }
 
+    /* Spaltenlayout */
     .column-left,
     .column-right {
+        padding: 2rem;
+
         border-top: 3px solid var(--border-color);
         border-bottom: 3px solid var(--border-color);
-        padding: 2rem;
     }
 
-    /* 1/3 zu 2/3 Asymmetrie */
     .column-left {
-        flex: 0.5; 
         display: flex;
+        flex: 0.5;
         flex-direction: column;
         justify-content: flex-start;
     }
 
     .column-right {
-        flex: 1; 
         display: flex;
+        flex: 1;
         flex-direction: column;
     }
 
-    .portrait-wrapper {
-        width: 100%;
-        height: auto;
-    }
-
-    /* Rahmenlinien */
+    /* Rasterlinien */
     .border-left-solid {
         border-left: 3px solid var(--border-color);
     }
@@ -113,57 +177,66 @@ import Logo from "../ui/Logo.astro";
         border-right: 2px dashed var(--border-color);
     }
 
+    /* Portrait */
+    .portrait-wrapper {
+        width: 100%;
+        height: auto;
+    }
+
     /* Branding */
     .logo-wrapper {
+        margin: 1.2rem 0 2rem -0.4rem;
+
         transform: scale(3);
         transform-origin: left center;
-        margin-top: 1.2rem;
-        margin-bottom: 2rem;
-        margin-left: -0.4rem;
     }
 
     .subheading {
-        margin-top: 0;
-        margin-bottom: 2rem;
-        font-weight: 700;
-        font-size: 160%;
-        border-bottom: 2px dashed var(--border-color);
+        margin: 0 0 2rem;
         padding-bottom: 0.5rem;
+
+        font-size: 160%;
+        font-weight: 700;
+
+        border-bottom: 2px dashed var(--border-color);
     }
 
     .text-designer {
-        color: var(--accent-2);
         margin-right: 1rem;
+        color: var(--accent-2);
     }
 
     .text-developer {
         color: var(--accent-1);
     }
 
-    /* Content-Strukturen */
-    .bio-content h3,
-    .tech-stack h3 {
-        font-family: var(--font-heading, monospace);
-        font-size: 1.1rem;
-        font-weight: 700;
-        margin-top: 0;
-        margin-bottom: 0.75rem;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-    }
-
-    .bio-content p {
-        margin-top: 0;
-        margin-bottom: 2rem;
-        line-height: 1.6;
-        font-size: var(--step-body, 1.1rem);
-    }
-
-    /* Tech Stack Grid Integration */
-    .tech-stack {
+    /* Inhaltsbereiche */
+    .content-section {
         margin-bottom: 2.5rem;
     }
 
+    .content-section:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .section-title {
+        margin: 0 0 0.75rem;
+
+        font-family: var(--font-heading);
+        font-size: 1.1rem;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+
+    .content-section p {
+        margin: 0;
+
+        font-size: var(--step-body);
+        line-height: 1.6;
+    }
+
+    /* Toolstack */
     .stack-grid {
         display: flex;
         flex-wrap: wrap;
@@ -171,29 +244,32 @@ import Logo from "../ui/Logo.astro";
     }
 
     .tech-tag {
-        font-family: var(--font-heading, monospace);
+        padding: 0.4rem 0.8rem;
+
+        font-family: var(--font-heading);
         font-size: 0.85rem;
         font-weight: 600;
-        padding: 0.4rem 0.8rem;
-        background-color: transparent;
-        border: 2px solid var(--border-color);
-        color: var(--text-color);
         text-transform: uppercase;
+
+        color: var(--text-color);
+        background: transparent;
+        border: 2px solid var(--border-color);
     }
 
-    /* Call to Action Platzierung */
+    /* Navigation */
     .action-area {
-        margin-top: auto; 
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start; 
-        gap: 1rem; 
-        padding-top: 1.5rem; 
+        gap: 1rem;
+
         width: 100%;
+        margin-top: auto;
+        padding-top: 1.5rem;
+
         border-top: 2px dashed var(--border-color);
     }
 
-    /* Responsive Layout-Kippung */
+        /* Responsives Layout */
     @media (max-width: 992px) {
         .action-area {
             flex-direction: column;
@@ -210,9 +286,10 @@ import Logo from "../ui/Logo.astro";
         }
 
         .column-left {
+            padding-bottom: 1rem;
+
             border-right: 3px solid var(--border-color);
             border-bottom: none;
-            padding-bottom: 1rem;
         }
 
         .column-right {

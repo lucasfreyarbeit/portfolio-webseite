@@ -1,37 +1,76 @@
 ---
 import Button from "../navigation/Button.astro";
+import FadeIn from "../animations/FadeIn.svelte";
 ---
 
 <section id="kontakt">
-    <!-- Einspaltiges Layout: Volle Breite, umschlossen vom Gitternetz -->
     <div class="row">
         <div class="col-full border-left-solid border-right-solid">
-            <h1 class="title1">KONTAKT</h1>
-            <h2>LASS UNS WAS STARTEN</h2>
-            <p>
-                Du hast eine offene Stelle, einen Ausbildungsplatz oder möchtest mich für ein Vorstellungsgespräch einladen? Schreib mir direkt – ich melde mich umgehend.
-            </p>
 
+            <!-- Einleitung -->
+            <FadeIn client:load>
+                <h1 class="title1">KONTAKT</h1>
+                <h2>LASS UNS WAS STARTEN</h2>
+
+                <p>
+                    Du hast eine offene Stelle, einen Ausbildungsplatz oder möchtest
+                    mich für ein Vorstellungsgespräch einladen? Schreib mir direkt –
+                    ich melde mich umgehend.
+                </p>
+            </FadeIn>
+
+            <!-- Formular -->
             <form class="contact-form">
-                <div class="form-group">
-                    <label for="name">UNTERNEHMEN / NAME</label>
-                    <input type="text" id="name" name="name" required placeholder="Name des Studios oder der Agentur" />
-                </div>
 
-                <div class="form-group">
-                    <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="email" required placeholder="deine.email@firma.de" />
-                </div>
+                <FadeIn client:load delay={100}>
+                    <div class="form-group">
+                        <label for="name">UNTERNEHMEN / NAME</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            required
+                            placeholder="Name des Studios oder der Agentur"
+                        />
+                    </div>
+                </FadeIn>
 
-                <div class="form-group">
-                    <label for="message">NACHRICHT</label>
-                    <textarea id="message" name="message" rows="5" required placeholder="Hi Lucas, wir würden dich gerne zu einem Gespräch einladen..."></textarea>
-                </div>
+                <FadeIn client:load delay={200}>
+                    <div class="form-group">
+                        <label for="email">EMAIL</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                            placeholder="deine.email@firma.de"
+                        />
+                    </div>
+                </FadeIn>
 
-                <div class="buttons">
-                    <Button href="#" variant="blue">ANFRAGE SENDEN</Button>
-                </div>
+                <FadeIn client:load delay={300}>
+                    <div class="form-group">
+                        <label for="message">NACHRICHT</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            required
+                            placeholder="Hi Lucas, wir würden dich gerne zu einem Gespräch einladen..."
+                        ></textarea>
+                    </div>
+                </FadeIn>
+
+                <FadeIn client:load delay={400}>
+                    <div class="buttons">
+                        <Button href="#" variant="blue">
+                            ANFRAGE SENDEN
+                        </Button>
+                    </div>
+                </FadeIn>
+
             </form>
+
         </div>
     </div>
 </section>
@@ -44,22 +83,23 @@ import Button from "../navigation/Button.astro";
     .row {
         display: flex;
         flex-direction: row;
-        width: 100%; 
-        margin: 0 auto; 
-        padding: 0rem 1rem;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 1rem;
     }
 
-    /* Layout-Klasse für die volle Breite im Gitternetz */
+    /* Formularbereich im Seitenraster */
     .col-full {
         flex: 1;
         display: flex;
         flex-direction: column;
+        padding: 0 1.5rem 1.5rem;
+
+        border-top: 0;
         border-bottom: 3px solid var(--border-color);
-        border-top: 0px;
-        padding: 0rem 1.5rem 1.5rem 1.5rem;
     }
 
-    /* Ausrichtung der Außenkanten */
+    /* Außenkanten des Rasters */
     .border-left-solid {
         border-left: 3px solid var(--border-color);
     }
@@ -69,61 +109,70 @@ import Button from "../navigation/Button.astro";
     }
 
     .title1 {
-        font-weight: 700;
-        font-size: 400%;
         margin-bottom: 0.5rem;
+        font-size: 400%;
+        font-weight: 700;
     }
 
+    /* Formularlayout */
     .contact-form {
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
+
         width: 100%;
         max-width: 600px;
+
         margin-top: 1.5rem;
     }
 
-    /* Container für Label und Input-Feld */
+    /* Eingabebereich */
     .form-group {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
+
         padding: 1rem;
-        border: 3px solid var(--outline-color);
+
         background: var(--bg-color);
-        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        border: 3px solid var(--outline-color);
+
+        transition:
+            border-color 0.2s ease,
+            box-shadow 0.2s ease;
     }
 
-    /* Fokus-State über den Parent-Container gelöst */
+    /* Fokuszustand */
     .form-group:focus-within {
         border-color: var(--accent-color2, #0055ff);
-        box-shadow: 4px 4px 0px var(--accent-color2, #0055ff);
+        box-shadow: 4px 4px 0 var(--accent-color2, #0055ff);
     }
 
     .form-group label {
         font-family: var(--font-heading);
-        font-weight: 700;
         font-size: 1.1rem;
+        font-weight: 700;
         letter-spacing: 0.05em;
+
         transition: color 0.2s ease;
     }
 
-    /* Farbliche Kennzeichnung des aktiven Labels */
     .form-group:focus-within label {
         color: var(--accent-color2, #0055ff);
     }
 
-    /* Native Inputs zurückgesetzt, Steuerung läuft über .form-group */
+    /* Texteingaben */
     .form-group input,
     .form-group textarea {
         width: 100%;
-        padding: 0.5rem 0rem;
-        font-family: inherit;
-        font-size: 1rem;
+        padding: 0.5rem 0;
+
+        font: inherit;
+        color: var(--text-color);
+
         background: transparent;
         border: none;
         border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-        color: var(--text-color);
     }
 
     .form-group input:focus,
@@ -132,10 +181,12 @@ import Button from "../navigation/Button.astro";
         border-bottom-color: var(--accent-color2, #0055ff);
     }
 
+    /* Button-Ausrichtung */
     .buttons {
-        margin-top: 1rem;
         display: flex;
         justify-content: flex-start;
+
         width: 100%;
+        margin-top: 1rem;
     }
 </style>

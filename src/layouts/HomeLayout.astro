@@ -1,6 +1,5 @@
 ---
 import "../styles/global.css";
-import Footer from "../components/navigation/Footer.astro";
 
 interface Props {
     title?: string;
@@ -19,12 +18,11 @@ const { title = "LUCAS FREY" } = Astro.props;
 <body>
 
     <div class="site-wrapper">
-
         <main class="main-content">
             <slot />
         </main>
-
     </div>
 
 </body>
 </html>
+
