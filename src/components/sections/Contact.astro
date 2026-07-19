@@ -1,14 +1,141 @@
+---
+import Button from "../navigation/Button.astro";
+---
+
 <section id="kontakt">
-  <h2>Kontakt</h2>
+    <!-- Einspaltiges Layout: Volle Breite, umschlossen vom Gitternetz -->
+    <div class="row">
+        <div class="col-full border-left-solid border-right-solid">
+            <h1 class="title1">KONTAKT</h1>
+            <h2>LASS UNS WAS STARTEN</h2>
+            <p>
+                Du hast eine offene Stelle, einen Ausbildungsplatz oder möchtest mich für ein Vorstellungsgespräch einladen? Schreib mir direkt – ich melde mich umgehend.
+            </p>
 
-  <p>
-    Kontakt aufnehmen? Dann schreib mir eine E-Mail an
-    <a href="mailto:kontakt@lucasfrey.de">
-      kontakt@lucasfrey.de
-    </a>.
-  </p>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">UNTERNEHMEN / NAME</label>
+                    <input type="text" id="name" name="name" required placeholder="Name des Studios oder der Agentur" />
+                </div>
 
-  <a href="mailto:kontakt@lucasfrey.de">
-    E-Mail senden
-  </a>
+                <div class="form-group">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email" required placeholder="deine.email@firma.de" />
+                </div>
+
+                <div class="form-group">
+                    <label for="message">NACHRICHT</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Hi Lucas, wir würden dich gerne zu einem Gespräch einladen..."></textarea>
+                </div>
+
+                <div class="buttons">
+                    <Button href="#" variant="blue">ANFRAGE SENDEN</Button>
+                </div>
+            </form>
+        </div>
+    </div>
 </section>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        width: 100%; 
+        margin: 0 auto; 
+        padding: 0rem 1rem;
+    }
+
+    /* Layout-Klasse für die volle Breite im Gitternetz */
+    .col-full {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 3px solid var(--border-color);
+        border-top: 0px;
+        padding: 0rem 1.5rem 1.5rem 1.5rem;
+    }
+
+    /* Ausrichtung der Außenkanten */
+    .border-left-solid {
+        border-left: 3px solid var(--border-color);
+    }
+
+    .border-right-solid {
+        border-right: 3px solid var(--border-color);
+    }
+
+    .title1 {
+        font-weight: 700;
+        font-size: 400%;
+        margin-bottom: 0.5rem;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+        max-width: 600px;
+        margin-top: 1.5rem;
+    }
+
+    /* Container für Label und Input-Feld */
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1rem;
+        border: 3px solid var(--outline-color);
+        background: var(--bg-color);
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    /* Fokus-State über den Parent-Container gelöst */
+    .form-group:focus-within {
+        border-color: var(--accent-color2, #0055ff);
+        box-shadow: 4px 4px 0px var(--accent-color2, #0055ff);
+    }
+
+    .form-group label {
+        font-family: var(--font-heading);
+        font-weight: 700;
+        font-size: 1.1rem;
+        letter-spacing: 0.05em;
+        transition: color 0.2s ease;
+    }
+
+    /* Farbliche Kennzeichnung des aktiven Labels */
+    .form-group:focus-within label {
+        color: var(--accent-color2, #0055ff);
+    }
+
+    /* Native Inputs zurückgesetzt, Steuerung läuft über .form-group */
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 0.5rem 0rem;
+        font-family: inherit;
+        font-size: 1rem;
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+        color: var(--text-color);
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+        outline: none;
+        border-bottom-color: var(--accent-color2, #0055ff);
+    }
+
+    .buttons {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
+</style>

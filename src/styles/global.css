@@ -1,10 +1,16 @@
 @import "./variables.css";
 @import "./fonts.css";
 
+/* 1. Global Reset & Box Sizing */
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+/* 2. Layout & Scroll-Verhalten */
+html {
+    scroll-behavior: smooth;
 }
 
 html, body {
@@ -30,7 +36,18 @@ body {
     flex-grow: 1;
 }
 
-/* Überschriften immer JetBrains Mono und All-Caps */
+/* 3. Multimedia & Basics */
+img, video, svg, canvas {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+iframe, embed, object {
+    max-width: 100%;
+}
+
+/* 4. Typografie */
 h1, h2, h3, h4, h5, h6, .font-mono-title {
     font-family: var(--font-heading);
     color: var(--title-color);
@@ -50,7 +67,7 @@ a {
     text-decoration: none;
 }
 
-/* Kontext-Klassen für flexible Nutzung */
+/* 5. Utilities & Layout-Helper */
 .text-editorial-italic {
     font-family: var(--font-editorial);
     font-style: italic;
@@ -59,6 +76,7 @@ a {
 .text-accent-1 { color: var(--accent-1); }
 .text-accent-2 { color: var(--accent-2); }
 
+/* 6. Scrollbar ausblenden */
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
     display: none;

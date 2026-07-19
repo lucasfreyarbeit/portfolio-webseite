@@ -8,7 +8,7 @@
   font-family: 'Roboto Mono';
   font-style: normal;
   font-weight: 100;
-  src: url('../../public/fonts/roboto-mono/roboto-mono-v31-latin-100.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/roboto-mono/roboto-mono-v31-latin-100.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* roboto-mono-100italic - latin */
 @font-face {
@@ -16,7 +16,7 @@
   font-family: 'Roboto Mono';
   font-style: italic;
   font-weight: 100;
-  src: url('../../public/fonts/roboto-mono/roboto-mono-v31-latin-100italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/roboto-mono/roboto-mono-v31-latin-100italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* roboto-mono-200 - latin */
 @font-face {
@@ -24,7 +24,7 @@
   font-family: 'Roboto Mono';
   font-style: normal;
   font-weight: 200;
-  src: url('../../public/fonts/roboto-mono/roboto-mono-v31-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/roboto-mono/roboto-mono-v31-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* roboto-mono-200italic - latin */
 @font-face {
@@ -32,7 +32,7 @@
   font-family: 'Roboto Mono';
   font-style: italic;
   font-weight: 200;
-  src: url('../../public/fonts/roboto-mono/roboto-mono-v31-latin-200italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/roboto-mono/roboto-mono-v31-latin-200italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* roboto-mono-300 - latin */
 @font-face {
@@ -40,7 +40,7 @@
   font-family: 'Roboto Mono';
   font-style: normal;
   font-weight: 300;
-  src: url('../../public/fonts/roboto-mono/roboto-mono-v31-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/roboto-mono/roboto-mono-v31-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* roboto-mono-300italic - latin */
 @font-face {
@@ -48,7 +48,7 @@
   font-family: 'Roboto Mono';
   font-style: italic;
   font-weight: 300;
-  src: url('../../public/fonts/roboto-mono/roboto-mono-v31-latin-300italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/roboto-mono/roboto-mono-v31-latin-300italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* roboto-mono-regular - latin */
 @font-face {
@@ -56,7 +56,7 @@
   font-family: 'Roboto Mono';
   font-style: normal;
   font-weight: 400;
-  src: url('../../public/fonts/roboto-mono/roboto-mono-v31-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/roboto-mono/roboto-mono-v31-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* roboto-mono-italic - latin */
 @font-face {
@@ -64,7 +64,7 @@
   font-family: 'Roboto Mono';
   font-style: italic;
   font-weight: 400;
-  src: url('../../public/fonts/roboto-mono/roboto-mono-v31-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/roboto-mono/roboto-mono-v31-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* roboto-mono-500 - latin */
 @font-face {
@@ -72,7 +72,7 @@
   font-family: 'Roboto Mono';
   font-style: normal;
   font-weight: 500;
-  src: url('../../public/fonts/roboto-mono/roboto-mono-v31-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/roboto-mono/roboto-mono-v31-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* roboto-mono-500italic - latin */
 @font-face {
@@ -80,7 +80,7 @@
   font-family: 'Roboto Mono';
   font-style: italic;
   font-weight: 500;
-  src: url('../../public/fonts/roboto-mono/roboto-mono-v31-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/roboto-mono/roboto-mono-v31-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* roboto-mono-600 - latin */
 @font-face {
@@ -88,7 +88,7 @@
   font-family: 'Roboto Mono';
   font-style: normal;
   font-weight: 600;
-  src: url('../../public/fonts/roboto-mono/roboto-mono-v31-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/roboto-mono/roboto-mono-v31-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* roboto-mono-600italic - latin */
 @font-face {
@@ -96,7 +96,7 @@
   font-family: 'Roboto Mono';
   font-style: italic;
   font-weight: 600;
-  src: url('../../public/fonts/roboto-mono/roboto-mono-v31-latin-600italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/roboto-mono/roboto-mono-v31-latin-600italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* roboto-mono-700 - latin */
 @font-face {
@@ -104,7 +104,7 @@
   font-family: 'Roboto Mono';
   font-style: normal;
   font-weight: 700;
-  src: url('../../public/fonts/roboto-mono/roboto-mono-v31-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/roboto-mono/roboto-mono-v31-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* roboto-mono-700italic - latin */
 @font-face {
@@ -112,7 +112,7 @@
   font-family: 'Roboto Mono';
   font-style: italic;
   font-weight: 700;
-  src: url('../../public/fonts/roboto-mono/roboto-mono-v31-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/roboto-mono/roboto-mono-v31-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* =========================
@@ -125,7 +125,7 @@
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 100;
-  src: url('../../public/fonts/jetbrains-mono/jetbrains-mono-v24-latin-100.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/jetbrains-mono/jetbrains-mono-v24-latin-100.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* jetbrains-mono-100italic - latin */
 @font-face {
@@ -133,7 +133,7 @@
   font-family: 'JetBrains Mono';
   font-style: italic;
   font-weight: 100;
-  src: url('../../public/fonts/jetbrains-mono/jetbrains-mono-v24-latin-100italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/jetbrains-mono/jetbrains-mono-v24-latin-100italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* jetbrains-mono-200 - latin */
 @font-face {
@@ -141,7 +141,7 @@
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 200;
-  src: url('../../public/fonts/jetbrains-mono/jetbrains-mono-v24-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/jetbrains-mono/jetbrains-mono-v24-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* jetbrains-mono-200italic - latin */
 @font-face {
@@ -149,7 +149,7 @@
   font-family: 'JetBrains Mono';
   font-style: italic;
   font-weight: 200;
-  src: url('../../public/fonts/jetbrains-mono/jetbrains-mono-v24-latin-200italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/jetbrains-mono/jetbrains-mono-v24-latin-200italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* jetbrains-mono-300 - latin */
 @font-face {
@@ -157,7 +157,7 @@
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 300;
-  src: url('../../public/fonts/jetbrains-mono/jetbrains-mono-v24-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/jetbrains-mono/jetbrains-mono-v24-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* jetbrains-mono-300italic - latin */
 @font-face {
@@ -165,7 +165,7 @@
   font-family: 'JetBrains Mono';
   font-style: italic;
   font-weight: 300;
-  src: url('../../public/fonts/jetbrains-mono/jetbrains-mono-v24-latin-300italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/jetbrains-mono/jetbrains-mono-v24-latin-300italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* jetbrains-mono-regular - latin */
 @font-face {
@@ -173,7 +173,7 @@
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 400;
-  src: url('../../public/fonts/jetbrains-mono/jetbrains-mono-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/jetbrains-mono/jetbrains-mono-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* jetbrains-mono-italic - latin */
 @font-face {
@@ -181,7 +181,7 @@
   font-family: 'JetBrains Mono';
   font-style: italic;
   font-weight: 400;
-  src: url('../../public/fonts/jetbrains-mono/jetbrains-mono-v24-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/jetbrains-mono/jetbrains-mono-v24-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* jetbrains-mono-500 - latin */
 @font-face {
@@ -189,7 +189,7 @@
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 500;
-  src: url('../../public/fonts/jetbrains-mono/jetbrains-mono-v24-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/jetbrains-mono/jetbrains-mono-v24-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* jetbrains-mono-500italic - latin */
 @font-face {
@@ -197,7 +197,7 @@
   font-family: 'JetBrains Mono';
   font-style: italic;
   font-weight: 500;
-  src: url('../../public/fonts/jetbrains-mono/jetbrains-mono-v24-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/jetbrains-mono/jetbrains-mono-v24-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* jetbrains-mono-600 - latin */
 @font-face {
@@ -205,7 +205,7 @@
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 600;
-  src: url('../../public/fonts/jetbrains-mono/jetbrains-mono-v24-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/jetbrains-mono/jetbrains-mono-v24-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* jetbrains-mono-600italic - latin */
 @font-face {
@@ -213,7 +213,7 @@
   font-family: 'JetBrains Mono';
   font-style: italic;
   font-weight: 600;
-  src: url('../../public/fonts/jetbrains-mono/jetbrains-mono-v24-latin-600italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/jetbrains-mono/jetbrains-mono-v24-latin-600italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* jetbrains-mono-700 - latin */
 @font-face {
@@ -221,7 +221,7 @@
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 700;
-  src: url('../../public/fonts/jetbrains-mono/jetbrains-mono-v24-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/jetbrains-mono/jetbrains-mono-v24-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* jetbrains-mono-700italic - latin */
 @font-face {
@@ -229,7 +229,7 @@
   font-family: 'JetBrains Mono';
   font-style: italic;
   font-weight: 700;
-  src: url('../../public/fonts/jetbrains-mono/jetbrains-mono-v24-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/jetbrains-mono/jetbrains-mono-v24-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* jetbrains-mono-800 - latin */
 @font-face {
@@ -237,7 +237,7 @@
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 800;
-  src: url('../../public/fonts/jetbrains-mono/jetbrains-mono-v24-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/jetbrains-mono/jetbrains-mono-v24-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* jetbrains-mono-800italic - latin */
 @font-face {
@@ -245,7 +245,7 @@
   font-family: 'JetBrains Mono';
   font-style: italic;
   font-weight: 800;
-  src: url('../../public/fonts/jetbrains-mono/jetbrains-mono-v24-latin-800italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/jetbrains-mono/jetbrains-mono-v24-latin-800italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* =========================
@@ -258,7 +258,7 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 100;
-  src: url('../../public/fonts/inter/inter-v20-latin-100.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/inter/inter-v20-latin-100.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* inter-100italic - latin */
 @font-face {
@@ -266,7 +266,7 @@
   font-family: 'Inter';
   font-style: italic;
   font-weight: 100;
-  src: url('../../public/fonts/inter/inter-v20-latin-100italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/inter/inter-v20-latin-100italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* inter-200 - latin */
 @font-face {
@@ -274,7 +274,7 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 200;
-  src: url('../../public/fonts/inter/inter-v20-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/inter/inter-v20-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* inter-200italic - latin */
 @font-face {
@@ -282,7 +282,7 @@
   font-family: 'Inter';
   font-style: italic;
   font-weight: 200;
-  src: url('../../public/fonts/inter/inter-v20-latin-200italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/inter/inter-v20-latin-200italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* inter-300 - latin */
 @font-face {
@@ -290,7 +290,7 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 300;
-  src: url('../../public/fonts/inter/inter-v20-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/inter/inter-v20-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* inter-300italic - latin */
 @font-face {
@@ -298,7 +298,7 @@
   font-family: 'Inter';
   font-style: italic;
   font-weight: 300;
-  src: url('../../public/fonts/inter/inter-v20-latin-300italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/inter/inter-v20-latin-300italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* inter-regular - latin */
 @font-face {
@@ -306,7 +306,7 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  src: url('../../public/fonts/inter/inter-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/inter/inter-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* inter-italic - latin */
 @font-face {
@@ -314,7 +314,7 @@
   font-family: 'Inter';
   font-style: italic;
   font-weight: 400;
-  src: url('../../public/fonts/inter/inter-v20-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/inter/inter-v20-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* inter-500 - latin */
 @font-face {
@@ -322,7 +322,7 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
-  src: url('../../public/fonts/inter/inter-v20-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/inter/inter-v20-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* inter-500italic - latin */
 @font-face {
@@ -330,7 +330,7 @@
   font-family: 'Inter';
   font-style: italic;
   font-weight: 500;
-  src: url('../../public/fonts/inter/inter-v20-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/inter/inter-v20-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* inter-600 - latin */
 @font-face {
@@ -338,7 +338,7 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
-  src: url('../../public/fonts/inter/inter-v20-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/inter/inter-v20-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* inter-600italic - latin */
 @font-face {
@@ -346,7 +346,7 @@
   font-family: 'Inter';
   font-style: italic;
   font-weight: 600;
-  src: url('../../public/fonts/inter/inter-v20-latin-600italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/inter/inter-v20-latin-600italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* inter-700 - latin */
 @font-face {
@@ -354,7 +354,7 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
-  src: url('../../public/fonts/inter/inter-v20-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/inter/inter-v20-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* inter-700italic - latin */
 @font-face {
@@ -362,7 +362,7 @@
   font-family: 'Inter';
   font-style: italic;
   font-weight: 700;
-  src: url('../../public/fonts/inter/inter-v20-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/inter/inter-v20-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* inter-800 - latin */
 @font-face {
@@ -370,7 +370,7 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 800;
-  src: url('../../public/fonts/inter/inter-v20-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/inter/inter-v20-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* inter-800italic - latin */
 @font-face {
@@ -378,7 +378,7 @@
   font-family: 'Inter';
   font-style: italic;
   font-weight: 800;
-  src: url('../../public/fonts/inter/inter-v20-latin-800italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/inter/inter-v20-latin-800italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* inter-900 - latin */
 @font-face {
@@ -386,7 +386,7 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 900;
-  src: url('../../public/fonts/inter/inter-v20-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/inter/inter-v20-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* inter-900italic - latin */
 @font-face {
@@ -394,7 +394,7 @@
   font-family: 'Inter';
   font-style: italic;
   font-weight: 900;
-  src: url('../../public/fonts/inter/inter-v20-latin-900italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/inter/inter-v20-latin-900italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* =========================
@@ -409,7 +409,7 @@
   font-family: 'Source Serif 4';
   font-style: normal;
   font-weight: 200;
-  src: url('../../public/fonts/source-serif4/source-serif-4-v14-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/source-serif4/source-serif-4-v14-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* source-serif-4-200italic - latin */
 @font-face {
@@ -417,7 +417,7 @@
   font-family: 'Source Serif 4';
   font-style: italic;
   font-weight: 200;
-  src: url('../../public/fonts/source-serif4/source-serif-4-v14-latin-200italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/source-serif4/source-serif-4-v14-latin-200italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* source-serif-4-300 - latin */
 @font-face {
@@ -425,7 +425,7 @@
   font-family: 'Source Serif 4';
   font-style: normal;
   font-weight: 300;
-  src: url('../../public/fonts/source-serif4/source-serif-4-v14-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/source-serif4/source-serif-4-v14-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* source-serif-4-300italic - latin */
 @font-face {
@@ -433,7 +433,7 @@
   font-family: 'Source Serif 4';
   font-style: italic;
   font-weight: 300;
-  src: url('../../public/fonts/source-serif4/source-serif-4-v14-latin-300italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/source-serif4/source-serif-4-v14-latin-300italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* source-serif-4-regular - latin */
 @font-face {
@@ -441,7 +441,7 @@
   font-family: 'Source Serif 4';
   font-style: normal;
   font-weight: 400;
-  src: url('../../public/fonts/source-serif4/source-serif-4-v14-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/source-serif4/source-serif-4-v14-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* source-serif-4-italic - latin */
 @font-face {
@@ -449,7 +449,7 @@
   font-family: 'Source Serif 4';
   font-style: italic;
   font-weight: 400;
-  src: url('../../public/fonts/source-serif4/source-serif-4-v14-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/source-serif4/source-serif-4-v14-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* source-serif-4-500 - latin */
 @font-face {
@@ -457,7 +457,7 @@
   font-family: 'Source Serif 4';
   font-style: normal;
   font-weight: 500;
-  src: url('../../public/fonts/source-serif4/source-serif-4-v14-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/source-serif4/source-serif-4-v14-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* source-serif-4-500italic - latin */
 @font-face {
@@ -465,7 +465,7 @@
   font-family: 'Source Serif 4';
   font-style: italic;
   font-weight: 500;
-  src: url('../../public/fonts/source-serif4/source-serif-4-v14-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/source-serif4/source-serif-4-v14-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* source-serif-4-600 - latin */
 @font-face {
@@ -473,7 +473,7 @@
   font-family: 'Source Serif 4';
   font-style: normal;
   font-weight: 600;
-  src: url('../../public/fonts/source-serif4/source-serif-4-v14-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/source-serif4/source-serif-4-v14-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* source-serif-4-600italic - latin */
 @font-face {
@@ -481,7 +481,7 @@
   font-family: 'Source Serif 4';
   font-style: italic;
   font-weight: 600;
-  src: url('../../public/fonts/source-serif4/source-serif-4-v14-latin-600italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/source-serif4/source-serif-4-v14-latin-600italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* source-serif-4-700 - latin */
 @font-face {
@@ -489,7 +489,7 @@
   font-family: 'Source Serif 4';
   font-style: normal;
   font-weight: 700;
-  src: url('../../public/fonts/source-serif4/source-serif-4-v14-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/source-serif4/source-serif-4-v14-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* source-serif-4-700italic - latin */
 @font-face {
@@ -497,7 +497,7 @@
   font-family: 'Source Serif 4';
   font-style: italic;
   font-weight: 700;
-  src: url('../../public/fonts/source-serif4/source-serif-4-v14-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/source-serif4/source-serif-4-v14-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* source-serif-4-800 - latin */
 @font-face {
@@ -505,7 +505,7 @@
   font-family: 'Source Serif 4';
   font-style: normal;
   font-weight: 800;
-  src: url('../../public/fonts/source-serif4/source-serif-4-v14-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/source-serif4/source-serif-4-v14-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* source-serif-4-800italic - latin */
 @font-face {
@@ -513,7 +513,7 @@
   font-family: 'Source Serif 4';
   font-style: italic;
   font-weight: 800;
-  src: url('../../public/fonts/source-serif4/source-serif-4-v14-latin-800italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/source-serif4/source-serif-4-v14-latin-800italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* source-serif-4-900 - latin */
 @font-face {
@@ -521,7 +521,7 @@
   font-family: 'Source Serif 4';
   font-style: normal;
   font-weight: 900;
-  src: url('../../public/fonts/source-serif4/source-serif-4-v14-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/source-serif4/source-serif-4-v14-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* source-serif-4-900italic - latin */
 @font-face {
@@ -529,7 +529,7 @@
   font-family: 'Source Serif 4';
   font-style: italic;
   font-weight: 900;
-  src: url('../../public/fonts/source-serif4/source-serif-4-v14-latin-900italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../fonts/source-serif4/source-serif-4-v14-latin-900italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* =========================
@@ -539,8 +539,8 @@
 
 @font-face {
     font-family: 'OpenDyslexic';
-    src: url('../../public/fonts/opendyslexic/OpenDyslexic-Bold.woff2') format('woff2'),
-        url('../../public/fonts/opendyslexic/OpenDyslexic-Bold.woff') format('woff');
+    src: url('../../fonts/opendyslexic/OpenDyslexic-Bold.woff2') format('woff2'),
+        url('../../fonts/opendyslexic/OpenDyslexic-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -548,8 +548,8 @@
 
 @font-face {
     font-family: 'OpenDyslexic';
-    src: url('../../public/fonts/opendyslexic/OpenDyslexic-BoldItalic.woff2') format('woff2'),
-        url('../../public/fonts/opendyslexic/OpenDyslexic-BoldItalic.woff') format('woff');
+    src: url('../../fonts/opendyslexic/OpenDyslexic-BoldItalic.woff2') format('woff2'),
+        url('../../fonts/opendyslexic/OpenDyslexic-BoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -557,8 +557,8 @@
 
 @font-face {
     font-family: 'OpenDyslexic';
-    src: url('../../public/fonts/opendyslexic/OpenDyslexic-Italic.woff2') format('woff2'),
-        url('../../public/fonts/opendyslexic/OpenDyslexic-Italic.woff') format('woff');
+    src: url('../../fonts/opendyslexic/OpenDyslexic-Italic.woff2') format('woff2'),
+        url('../../fonts/opendyslexic/OpenDyslexic-Italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -566,8 +566,8 @@
 
 @font-face {
     font-family: 'OpenDyslexic';
-    src: url('../../public/fonts/opendyslexic/OpenDyslexic-Regular.woff2') format('woff2'),
-        url('../../public/fonts/opendyslexic/OpenDyslexic-Regular.woff') format('woff');
+    src: url('../../fonts/opendyslexic/OpenDyslexic-Regular.woff2') format('woff2'),
+        url('../../fonts/opendyslexic/OpenDyslexic-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

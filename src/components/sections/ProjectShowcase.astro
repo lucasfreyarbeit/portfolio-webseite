@@ -1,5 +1,109 @@
+---
+import Button from "../navigation/Button.astro";
+import ImageBox from "../ui/ImageBox.astro";
+---
+
 <section id="projekte">
+    <!-- Projekt 1: Layout-Basis mit Bild links und Text rechts -->
+    <div class="row">
+        <div class="col-image border-left-solid border-right-dashed">
+            <ImageBox src="/images/projects/Placeholder.png" alt="Projekt 1 Vorschau" />
+        </div>
+        
+        <div class="col-text border-right-solid">
+            <h1 class="title1">PROJEKT 1</h1>
+            <h2>BESCHREIBUNG</h2>
+            <p>
+                bla bla bla bla..<br>
+                ganz viel text<br>
+                und so
+            </p>
+            <div class="buttons">
+                <!-- FIX: Verlinkt direkt auf die gerenderte Route (kleingeschrieben ohne Dateiendung) -->
+                <Button href="/projekte/projekt-1" variant="red">PROJEKT GENAUER ANSEHEN</Button>
+            </div>
+        </div>
+    </div>
 
-    <h2>Projekte</h2>
-
+    <!-- Projekt 2: HTML-Reihenfolge getauscht für visuelle Spiegelung -->
+    <div class="row">
+        <div class="col-text border-left-solid border-right-dashed">
+            <h1 class="title2">PROJEKT 2</h1>
+            <h2>BESCHREIBUNG</h2>
+            <p>
+                Hier steht der Text für das zweite Projekt.<br>
+                Alles sauber gespiegelt durch HTML-Anordnung.<br>
+                Borders fluchten perfekt mit Projekt 1.
+            </p>
+            <div class="buttons">
+                <!-- FIX: Verlinkt direkt auf die gerenderte Route (kleingeschrieben ohne Dateiendung) -->
+                <Button href="/projekte/projekt-2" variant="red">PROJEKT GENAUER ANSEHEN</Button>
+            </div>
+        </div>
+        
+        <div class="col-image border-right-solid">
+            <ImageBox src="/images/projects/Placeholder.png" alt="Projekt 2 Vorschau" />
+        </div>
+    </div>
 </section>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        width: 100%; 
+        margin: 0 auto; 
+        padding: 0rem 1rem; /* Hält die Reihen bündig */
+    }
+
+    .col-image, 
+    .col-text {
+        border-bottom: 3px solid var(--border-color);
+        border-top: 0px;
+        /* FIX: Oberes Padding von 0rem auf 1.5rem erhöht, damit die Bilder Abstand nach oben haben */
+        padding: 1.5rem 1.5rem 1.5rem 1.5rem; 
+    }
+
+    /* Asymmetrischer Spalten-Split (1/3 Bild zu 2/3 Text) */
+    .col-image {
+        flex: 0.5;
+    }
+
+    .col-text {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Rahmenausrichtung für das Gitternetz */
+    .border-left-solid {
+        border-left: 3px solid var(--border-color);
+    }
+
+    .border-right-solid {
+        border-right: 3px solid var(--border-color);
+    }
+
+    .border-right-dashed {
+        border-right: 2px dashed var(--border-color);
+    }
+
+    .title1, .title2 {
+        font-weight: 700;
+        font-size: 400%;
+        margin-top: 0; /* Verhindert, dass der Text tiefer rutscht als das Bild */
+    }
+
+    .buttons {
+        margin-top: auto; 
+        display: flex;
+        justify-content: center; 
+        gap: 1.5rem; 
+        padding-top: 2rem; 
+        width: 100%;
+    }
+</style>

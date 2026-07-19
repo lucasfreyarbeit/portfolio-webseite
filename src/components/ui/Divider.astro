@@ -10,21 +10,25 @@ const { class: className = "", variant = "default" } = Astro.props;
 <div class={`divider divider--${variant} ${className}`} />
 
 <style>
-.divider {
-    display: block;
-    width: calc(100% - 2rem);
-    max-width: 95%;
-    height: 2px;
-}
+    * {
+        box-sizing: border-box;
+    }
 
-.divider--default {
-    background-color: var(--divider-color);
-    margin: 3rem auto;
-}
+    /* Basiskonfiguration */
+    .divider {
+        display: block;
+        width: 100%; /* Füllt die komplette Breite des übergeordneten Elements */
+        height: 2px;
+    }
 
-.divider--footer {
-    background-color: var(--divider-footer-color);
-    margin-top: 1rem auto;
-    margin-bottom: 0rem auto;
-}
+    /* Varianten */
+    .divider--default {
+        background-color: var(--divider-color);
+        margin: 3rem 0; /* Horizontales Zentrieren über margin-auto entfernt */
+    }
+
+    .divider--footer {
+        background-color: var(--divider-footer-color);
+        margin: 1rem 0 0rem 0;
+    }
 </style>
