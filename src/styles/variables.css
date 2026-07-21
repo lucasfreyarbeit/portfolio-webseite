@@ -26,6 +26,7 @@
     /* Fluid Typography: clamp(MIN, RESPONSIV, MAX) */
     --step-hero-title: clamp(2.5rem, 5vw + 1rem, 4.5rem);
     --step-heading: clamp(1.75rem, 3vw + 1rem, 2.5rem);
+    --step-subheading: clamp(1rem, 2vw + 1rem, 1.5rem);
     --step-body: clamp(1rem, 0.5vw + 0.9rem, 1.125rem);
     --step-small: clamp(0.85rem, 0.2vw + 0.8rem, 0.95rem);
 }

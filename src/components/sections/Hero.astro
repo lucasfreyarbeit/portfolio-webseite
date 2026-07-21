@@ -67,39 +67,38 @@ const toolCategories: ToolCategory[] = [
                 </FadeIn>
             </div>
 
-            <FadeIn client:load delay={0} immediate>
-                <div class="status-indicator">
-                    <span class="dot" aria-hidden="true"></span>
-                    <span class="status-text">OFFEN FÜR ANFRAGEN</span>
-                </div>
-            </FadeIn>
-
-            <div class="meta-section">
-                <FadeIn client:load delay={150} immediate>
-                    <div class="meta-details">
-                        <div class="meta-item">
-                            <span class="meta-label">Suche nach:</span>
-                            <span class="meta-value">Ausbildung oder Quereinstieg</span>
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-label">Fokus:</span>
-                            <span class="meta-value">Web-Entwicklung, Produktdesign, UI + UX</span>
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-label">Verfügbar:</span>
-                            <span class="meta-value">Ab sofort</span>
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-label">Standort:</span>
-                            <span class="meta-value">Ochsenhausen</span>
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-label">Arbeitsort:</span>
-                            <span class="meta-value">Vor Ort und Remote</span>
-                        </div>
+            <div class="status-box">
+                <FadeIn client:load delay={0} immediate>
+                    <div class="status-badge">
+                        <span class="status-dot"></span>
+                        <span class="status-title">OFFEN FÜR ANFRAGEN</span>
                     </div>
                 </FadeIn>
+
+                <FadeIn client:load delay={100} immediate>
+                    <!-- Trennlinie oberhalb der Liste -->
+                    <div class="divider-dashed"></div>
+
+                    <!-- Rasterstruktur für Schlüssel-Wert-Paare -->
+                    <dl class="info-grid">
+                        <dt>SUCHE NACH:</dt>
+                        <dd>Ausbildung oder Quereinstieg</dd>
+
+                        <dt>FOKUS:</dt>
+                        <dd>Web-Entwicklung, Produktdesign, UI + UX</dd>
+
+                        <dt>VERFÜGBAR:</dt>
+                        <dd>Ab sofort</dd>
+
+                        <dt>STANDORT:</dt>
+                        <dd>Ochsenhausen</dd>
+
+                        <dt>ARBEITSORT:</dt>
+                        <dd>Vor Ort und Remote</dd>
+                    </dl>
+                </FadeIn>
             </div>
+            
         </div>
 
         <!-- Rechte Spalte: Inhalts- und Navigationsbereich -->
@@ -201,7 +200,7 @@ const toolCategories: ToolCategory[] = [
 
     #hero {
         width: 100%;
-        padding-top: 1rem;
+        padding-top: 2.5rem;
         min-height: 100dvh;
         display: flex;
     }
@@ -224,77 +223,80 @@ const toolCategories: ToolCategory[] = [
     /* Linke Spalte */
     .column-left {
         display: flex;
-        flex: 0.5;
+        flex: 0 0 clamp(280px, 25vw, 360px);
         flex-direction: column;
         justify-content: flex-start;
-    }
-
-    .portrait-wrapper {
-        width: 100%;
-    }
-
-    .meta-section {
-        margin-top: 1.25rem;
-        padding-top: 1.25rem;
-        border-top: 2px dashed var(--border-color);
-    }
-
-    .meta-details {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    .meta-item {
-        display: flex;
-        flex-direction: row;
-        align-items: baseline;
-        gap: 0.4rem;
-    }
-
-    .meta-label {
-        font-family: var(--font-heading);
-        font-size: 1.1rem;
-        font-weight: 700;
-        color: var(--text-color);
-        text-transform: uppercase;
-    }
-
-    .meta-value {
-        font-size: 1rem;
-        font-style: italic;
-        line-height: 1.4;
-    }
-
-    .status-indicator {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        margin-top: 1.25rem;
-        margin-bottom: -1rem;
-    }
-
-    .dot {
-        width: 15px;
-        height: 15px;
-        background-color: #00ff66;
-        border: 2px solid var(--border-color);
-        border-radius: 50%;
-        filter: drop-shadow(0.1em 0.1em 0 var(--shadow-color));
-    }
-
-    .status-text {
-        font-family: var(--font-heading);
-        font-size: 1.2rem;
-        font-weight: 700;
-        letter-spacing: 0.05em;
     }
 
     /* Rechte Spalte */
     .column-right {
         display: flex;
         flex: 1;
+        min-width: 0;
         flex-direction: column;
+    }
+
+    .portrait-wrapper {
+        width: 100%;
+    }
+
+    /* Container für die linke Sidebar-Information */
+    .status-box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1.25rem;
+    }
+
+    .status-badge {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        font-family: var(--font-heading);
+        font-weight: 700;
+        font-size: var(--step-body);
+    }
+
+    .status-dot {
+        width: 14px;
+        height: 14px;
+        background-color: #00ff66;
+        border: 2px solid var(--border-color);
+        border-radius: 50%;
+    }
+
+    .divider-dashed {
+        width: 100%;
+        margin: 1rem 0;
+        border-bottom: 2px dashed var(--border-color);
+    }
+
+    /* Tabellarisches Grid für Schlüssel-Wert-Paare */
+    .info-grid {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        column-gap: 1.25rem;
+        row-gap: 0.85rem;
+        align-items: baseline;
+        margin: 0;
+    }
+
+    .info-grid dt {
+        font-family: var(--font-heading);
+        font-weight: 700;
+        font-size: var(--step-small);
+        color: var(--title-color);
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+
+    .info-grid dd {
+        margin: 0;
+        font-family: var(--font-ui);
+        font-style: italic;
+        font-size: var(--step-small);
+        color: var(--text-color);
+        line-height: 1.4;
     }
 
     /* Branding-Block */
@@ -345,7 +347,8 @@ const toolCategories: ToolCategory[] = [
     .section-title {
         margin: 0 0 0.9rem;
         font-family: var(--font-heading);
-        font-size: 1.1rem;
+        font-size: var(--step-subheading);
+        color: var(--text-color);
         font-weight: 700;
         letter-spacing: 0.05em;
         text-transform: uppercase;
@@ -395,7 +398,6 @@ const toolCategories: ToolCategory[] = [
         text-transform: uppercase;
         color: var(--text-color);
         background: transparent;
-        /* KORREKTUR: Standardwert für durchgehenden Rahmen gesetzt */
         border: 2px solid var(--border-color);
         white-space: nowrap;
         width: fit-content;

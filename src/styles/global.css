@@ -27,11 +27,14 @@ body {
     overflow-x: hidden;
 }
 
+/* Zentrale Breitenbegrenzung verhindert unendliches Wachstum auf Ultra-Wide-Monitoren */
 .site-wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100dvh;
     width: 100%;
+    max-width: var(--site-max-width, 1440px);
+    margin: 0 auto;
 }
 
 .main-content {
@@ -58,14 +61,16 @@ body {
     padding: 1.5rem;
 }
 
+/* Spaltenbreite der Bild-Sektion wird fest im Verhältnis eingegrenzt */
 .col-image {
-    flex: 0.5;
+    flex: 0 0 clamp(280px, 25vw, 360px);
     padding: 1.5rem;
 }
 
 .col-text {
     display: flex;
     flex: 1;
+    min-width: 0;
     flex-direction: column;
     padding: 1.5rem;
 }
@@ -160,7 +165,7 @@ a {
     .col-image,
     .col-text {
         width: 100%;
-        flex: 1;
+        flex: 1 1 auto;
     }
 
     .border-right-solid,
@@ -182,28 +187,19 @@ body {
     scrollbar-width: none;
 }
 
-/* GLOBAL FLUID ROOT scaling FOR 2K & 4K DISPLAYS */
+/* GLOBAL FLUID ROOT SCALING FOR HIGH-RES DISPLAYS */
 html {
-    /* Standardwert für Full HD (100% = 16px) */
     font-size: 100%; 
 }
 
-/* Ab 2K (Quad HD / 1440p Wide) */
 @media (min-width: 1920px) {
     html {
-        font-size: 112.5%; /* Skaliert Basis auf 18px */
+        font-size: 106.25%; /* 17px Basis */
     }
 }
 
-/* Ab 4K Ultra HD (3840px) */
 @media (min-width: 2560px) {
     html {
-        font-size: 137.5%; /* Skaliert Basis auf 22px */
-    }
-}
-
-@media (min-width: 3400px) {
-    html {
-        font-size: 160%; /* Skaliert Basis auf ~25.6px für native 4K Display-Füllung */
+        font-size: 112.5%; /* 18px Basis */
     }
 }
